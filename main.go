@@ -19,4 +19,9 @@ func main() {
 	fmt.Printf("\nIgloo house door type: %s\n", iglooHouse.doorType)
 	fmt.Printf("Igloo house window type: %s\n", iglooHouse.windowType)
 	fmt.Printf("Igloo house num of floors: %d\n", iglooHouse.floors)
+
+	fmt.Println("\n\nExample 2")
+
+	response := NewResponseBuilder().WithEmail("jane.doe@somemail.com").FromCity("Knowhere").WithBalance(1234.567).Build()
+	fmt.Printf("Response: %+v\n", response)
 }
